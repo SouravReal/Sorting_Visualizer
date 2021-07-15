@@ -33,8 +33,6 @@ function generate_array()
         margin_size=0.1;
         divs[i].style=" margin:0% " + margin_size + "%; background-color:blue; width:" + (100/array_size-(2*margin_size)) + "%; height:" + (div_sizes[i]) + "%;";
     }
-    const info1 = document.querySelector('.algoInfo')
-    info1.innerText = "Select a sorting algorithm to get brief information"
 }
 
 function update_array_size()
@@ -72,41 +70,17 @@ function runalgo()
     this.classList.add("butt_selected");
     switch(this.innerHTML)
     {
-        case "Bubble":{
-            Bubble()
-            const info = document.querySelector('.algoInfo')
-            info.innerText = "details about bubble sort"
-        }
+        case "Bubble":Bubble();
                         break;
-        case "Selection":{
-            Selection_sort()
-            const info = document.querySelector('.algoInfo')
-            info.innerText = "details about selection sort"
-        }
+        case "Selection":Selection_sort();
                         break;
-        case "Insertion":{
-            Insertion();
-            const info = document.querySelector('.algoInfo')
-            info.innerText = "details about insertion sort"
-        }
+        case "Insertion":Insertion();
                         break;
-        case "Merge":{
-            Merge();
-            const info = document.querySelector('.algoInfo')
-            info.innerText = "details about merge sort"
-        }
+        case "Merge":Merge();
                         break;
-        case "Quick":{
-            Quick();
-            const info = document.querySelector('.algoInfo')
-            info.innerText = "details about quick sort"
-        }
+        case "Quick":Quick();
                         break;
-        case "Heap":{
-            Heap();
-            const info = document.querySelector('.algoInfo')
-            info.innerText = "details about heap sort"
-        }
+        case "Heap":Heap();
                         break;
     }
 }
