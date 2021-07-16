@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorting Visualizer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -39,17 +40,35 @@
             </div>
         </div>
         <div id="sidebarr">
-            <p class="algoInfo">Select a sorting algorithm to get brief information</p>
+            <div class="clr-black">
+                <h2 class="algoInfo">Select a sorting algorithm to get brief information</h2>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="legend clr-black">
+                <h6 class="head6">Colours Used</h6><br>
+                <span class="yl">Yellow</span>-Compare<br>
+                <span class="rd">Red</span>-Swap<br>
+                <span class="gr">Green</span>-Sorted<br>
+                <span class="bl">Blue</span>-Unsorted
+            </div>
         </div>
-        <footer>Footer</footer>
+        <footer>
+            <center>
+                <div class="cntr">
+                    <a href="https://github.com/debashishsamantara" class="fa fa-github"></a> 
+                    <a href="https://github.com/SouravReal" class="fa fa-github"></a> 
+                    <a href="http://github.com/JyotiShankarJena" class="fa fa-github"></a> 
+                    <a href="https://www.instagram.com/am_akankshya/" class="fa fa-instagram"></a>
+                </div> 
+            </center>
+        </footer>
 
     </div>
 
     <script src="./scripts/main.js"></script>
-    <!--This should be at the end of body and should be loaded before sorts.js-->
     <script src="./scripts/visualizations.js"></script>
-    <!--This should be loaded after main.js-->
-
     <script src="./scripts/bubble_sort.js"></script>
     <script src="./scripts/selection_sort.js"></script>
     <script src="./scripts/insertion_sort.js"></script>
