@@ -34,7 +34,7 @@ function generate_array()
         divs[i].style=" margin:0% " + margin_size + "%; background-color:blue; width:" + (100/array_size-(2*margin_size)) + "%; height:" + (div_sizes[i]) + "%;";
     }
     const info1 = document.querySelector('.algoInfo')
-    info1.innerText = "Select a sorting algorithm to get brief information"
+    info1.innerText = "Select a sorting algorithm to get brief information."
 }
 
 function update_array_size()
@@ -75,37 +75,37 @@ function runalgo()
         case "Bubble":{
             Bubble()
             const info = document.querySelector('.algoInfo')
-            info.innerText = "details about bubble sort"
+            info.innerHTML = "Best case:<br> &#937(N) <br> Average Case: <br> &#920(N^2) <br> Worst Case: <br>O(N^2)<br><br> Space Complexity: <br>O(1)<br><br> Category:<br> Inplace"
         }
                         break;
         case "Selection":{
             Selection_sort()
             const info = document.querySelector('.algoInfo')
-            info.innerText = "details about selection sort"
+            info.innerHTML = "Best case:<br> &#937(N^2) <br> Average Case: <br> &#920(N^2) <br> Worst Case: <br>O(N^2)<br><br> Space Complexity: <br>O(1)<br><br> Category: <br>Inplace"
         }
                         break;
         case "Insertion":{
             Insertion();
             const info = document.querySelector('.algoInfo')
-            info.innerText = "details about insertion sort"
+            info.innerHTML = "Best case:<br> &#937(N) <br> Average Case: <br>&#920(N^2) <br> Worst Case: <br>O(N^2) <br><br> Space Complexity: <br>O(1) <br><br> Category: <br>Inplace"
         }
                         break;
         case "Merge":{
             Merge();
             const info = document.querySelector('.algoInfo')
-            info.innerText = "details about merge sort"
+            info.innerHTML = "Best case:<br> &#937(N log N) <br> Average Case: <br>&#920(N log N)<br> Worst Case: <br>O(N log N)<br><br> Space Complexity: <br>O(N) <br><br> Category: <br>External"
         }
                         break;
         case "Quick":{
             Quick();
             const info = document.querySelector('.algoInfo')
-            info.innerText = "details about quick sort"
+            info.innerHTML = "Best case:<br> &#937(N log N) <br> Average Case: <br>&#920(N log N)<br> Worst Case: <br>O(N^2)<br><br> Space Complexity: <br>O(N) <br><br> Category: <br>Inplace"
         }
                         break;
         case "Heap":{
             Heap();
             const info = document.querySelector('.algoInfo')
-            info.innerText = "details about heap sort"
+            info.innerHTML = "Best case:<br> &#937(N log N) <br> Average Case: <br>&#920(N log N) <br> Worst Case: <br>O(N log N)<br> <br>Space Complexity: <br>O(N)<br> <br>Category: <br>Inplace"
         }
                         break;
     }
